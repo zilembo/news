@@ -2,7 +2,7 @@
 function Sql_connect()
 {
     mysql_connect('localhost', 'root', '');
-    mysql_select_db('test');
+    mysql_select_db('news_base');
 }
 
 

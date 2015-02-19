@@ -1,7 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Надя
- * Date: 18.02.2015
- * Time: 20:03
- */
+
+require_once __DIR__ . '/../functions/sql.php';
+
+function Photo_getAll()
+{
+    Sql_connect();
+
+    $sql ='SELECT * FROM news';
+
+    return Sql_query($sql);
+}
+
+?>

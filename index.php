@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Надя
- * Date: 18.02.2015
- * Time: 23:13
- */
+
+require __DIR__ . '/model/news.php';
+$items = Photo_getAll();
+include __DIR__ . '/view/index.php';
+
+?>

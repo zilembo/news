@@ -6,6 +6,12 @@
     <title></title>
 </head>
 <body>
-1234567
+<?php foreach($items as $item):?>
+        <table border="1">
+            <tr><td><?php echo $item['title'];?></td>
+            <td><?php echo $item['date'];?></td></tr>
+        <tr>  <td>  <?php echo $item['content'];?></td></tr>
+        <table>
+<?php endforeach;?>
 </body>
 </html>
