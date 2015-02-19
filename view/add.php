@@ -6,14 +6,18 @@
     <title></title>
 </head>
 <body>
-
+<a href="">На главную</a>
 <form action="add.php" method="post" enctype="multipart/form-data">
-    <label for="title">Добавить новость</label>
-    <input type="text" id="title" name="title">
-    <label for="news">Фото</label>
-    <input type="text" id="news" name="news">
+    <label for="title">Заголовок:</label>
+    </br>
+    <input type="text" id="title" name="title" size="40">
+    </br>
+    <label for="news">Текст статьи:</label>
+    </br>
+    <input type="text" id="news" name="news"  size="40">
+    </br>
     <input type="submit">
 </form>
-<a href="/">На главную</a>
+
 </body>
 </html>

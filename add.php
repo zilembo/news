@@ -8,6 +8,6 @@ if(!empty($_POST))
         $data['title'] = $_POST['title'];
     }
 }
-include __DIR__ . '/views/add.php';
+include __DIR__ . '/view/add.php';
 
 ?>

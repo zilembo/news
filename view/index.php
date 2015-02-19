@@ -6,6 +6,7 @@
     <title></title>
 </head>
 <body>
+<a href="add.php">Добавить статью</a>
 <?php foreach($items as $item):?>
         <table border="1">
             <tr><td><?php echo $item['title'];?></td>
@@ -13,5 +14,6 @@
         <tr>  <td>  <?php echo $item['content'];?></td></tr>
         <table>
 <?php endforeach;?>
+
 </body>
 </html>

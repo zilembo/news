@@ -6,7 +6,7 @@ function Photo_getAll()
 {
     Sql_connect();
 
-    $sql ='SELECT * FROM news';
+    $sql ='SELECT * FROM news ORDER BY date DESC';
 
     return Sql_query($sql);
 }
