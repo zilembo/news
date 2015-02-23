@@ -1,14 +1,16 @@
 <?php
-
 require_once __DIR__ . '/../functions/sql.php';
 
-function Photo_getAll()
+
+
+class News_getAll
 {
-    Sql_connect();
-
-    $sql ='SELECT * FROM news ORDER BY date DESC';
-
-    return Sql_query($sql);
+   public function n_getAll()
+    {
+        $sql = 'SELECT * FROM news ORDER BY date DESC';
+        $fun = new Get_Query();
+        $fun -> Sql_query($sql);
+        return $fun -> Sql_query($sql);
+    }
 }
-
 ?>
